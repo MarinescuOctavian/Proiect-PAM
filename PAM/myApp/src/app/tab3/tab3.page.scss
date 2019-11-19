@@ -2,8 +2,8 @@
     max-height: 35vh;
     overflow: hidden;
   }
-  
   ion-content.background{
     --background: url(../../assets/img/poza.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  
