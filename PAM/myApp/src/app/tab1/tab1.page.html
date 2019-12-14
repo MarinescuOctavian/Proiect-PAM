@@ -1,15 +1,21 @@
-
-<ion-content >
-  <div  padding class="background" style="background: url(../../assets/img/poza.jpg);"> </div>
-    <ion-list >
-      <ion-item-sliding >
-        <ion-item >
-          <ion-label>Panini</ion-label>
+<ion-content padding class="background">
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Panini</ion-label>
+    </ion-list-header>
+    <ion-item-sliding>
+      <ng-container *ngFor="let menu of menuList">
+        <ion-item>
+          <div class="row no-gutters" style="width:100%">
+            <div class="col">{{menu.name}}</div>
+            <div class="col" style="text-align: center">{{menu.price}}</div>
+            <div class="col" style="text-align: right">
+                <ion-button expand="block" fill="outline" color="danger">Comanda acum!</ion-button>
+            </div>
+          </div>
         </ion-item>
-      </ion-item-sliding>
-      <ng-container  *ngFor="let menu of menuList">
-        <p>{{menu.name}}   ................     {{menu.price}}</p>
       </ng-container>
-      </ion-list>
-      
+    </ion-item-sliding>
+
+  </ion-list>
 </ion-content>
