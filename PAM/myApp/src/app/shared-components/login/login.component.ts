@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
 
   onLogin(formValues: any) {
     if (this.loginForm.valid) {
-      if (formValues.email === "ana@co.ro" && formValues.password === "123") {
+      if (formValues.email === "admin@test.ro" && formValues.password === "admin") {
         // login success
         console.log("Login success");
         this.loginSucceed.emit(LoginMsg.SUCCESS);

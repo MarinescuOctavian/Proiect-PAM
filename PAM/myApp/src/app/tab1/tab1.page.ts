@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Menu } from '../model/menu.model';
+import { OrderService } from 'src/order.service';
 
 @Component({
   selector: 'app-tab1',
@@ -10,7 +11,8 @@ export class Tab1Page {
 
  menuList= new Array<Menu>();
 
-  constructor() {
+  constructor(public orderService:OrderService) {
+
     this.menuList.push(new Menu("Meniul campionilor",15));
 
     this.menuList.push(new Menu("Meniul zilei",13));
@@ -18,6 +20,12 @@ export class Tab1Page {
     this.menuList.push(new Menu("Meniu Aripioare",12));
     this.menuList.push(new Menu("Meniu Snitel",14));
 
+  }
+
+  addproduct(menu){
+    this.orderService.orderdProducts.push(menu);
+
+    console.log(this.orderService.orderdProducts);
   }
 
 }
