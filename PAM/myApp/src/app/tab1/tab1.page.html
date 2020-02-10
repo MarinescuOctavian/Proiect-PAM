@@ -6,11 +6,11 @@
     <ion-item-sliding>
       <ng-container *ngFor="let menu of menuList">
         <ion-item>
-          <div class="row no-gutters" style="width:100%">
-            <div class="col">{{menu.name}}</div>
-            <div class="col" style="text-align: center">{{menu.price}}</div>
+          <div class="meniu row no-gutters" style="width:100%">
+            <div class="col-md-8 p-2 m-2">{{menu.name}}</div>
+            <div class="col-md-2 p-2 m-2" style="text-align: center">{{menu.price}}</div>
             <div class="col" style="text-align: right">
-                <ion-button expand="block" fill="outline" color="danger" (click)="addproduct(menu)">Comanda acum!</ion-button>
+                <ion-button (click)="addproduct(menu)">Adauga</ion-button>
             </div>
           </div>
         </ion-item>

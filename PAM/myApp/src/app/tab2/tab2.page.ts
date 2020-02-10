@@ -19,12 +19,7 @@ ngOnInit(){
   console.log(this.menuList);
  this.totalProducts();
 }
-totalProducts(){
-
-    
+totalProducts(){    
   }
-  
-  
-
 
 }

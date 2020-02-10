@@ -13,12 +13,16 @@ export class Tab1Page {
 
   constructor(public orderService:OrderService) {
 
-    this.menuList.push(new Menu("Meniul campionilor",15));
-
-    this.menuList.push(new Menu("Meniul zilei",13));
-
-    this.menuList.push(new Menu("Meniu Aripioare",12));
+    this.menuList.push(new Menu("Meniul Campionilor",15));
+    this.menuList.push(new Menu("Meniul Zilei",13));
+    this.menuList.push(new Menu("Meniu Aripioare",13));
     this.menuList.push(new Menu("Meniu Snitel",14));
+    this.menuList.push(new Menu("Meniu Cascaval Pane",14));
+    this.menuList.push(new Menu("Salata cu Pui",12));
+    this.menuList.push(new Menu("Salata Mexicana",12));
+    this.menuList.push(new Menu("Sandwich cu Pui",8.5));
+    this.menuList.push(new Menu("Sandwich cu Porc",9));
+    
 
   }
 
