@@ -1,4 +1,18 @@
 
 <ion-content padding class="background">
-    <ion-button expand="block" fill="outline" color="warning">Comanda acum!</ion-button>
+        <ion-item-sliding>
+                <ng-container *ngFor="let menu of menuList">
+                  <ion-item>
+                    <div class="chenar row no-gutters" style="width:100%">
+                      <div class="col-md-8 p-2 m-2">{{menu.name}}</div>
+                      <div class="col-md-2" style="text-align: center">{{menu.price}}</div>
+                    </div>
+                </ion-item>
+              </ng-container>
+              
+            </ion-item-sliding>
+            <ion-button >Plaseaza comanda</ion-button>
+
+   
+    
 </ion-content>

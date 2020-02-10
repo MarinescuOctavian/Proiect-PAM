@@ -25,7 +25,7 @@ export class Tab1Page {
   addproduct(menu){
     this.orderService.orderdProducts.push(menu);
 
-    console.log(this.orderService.orderdProducts);
+    
   }
 
 }
