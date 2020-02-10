@@ -19,7 +19,13 @@ ngOnInit(){
   console.log(this.menuList);
  this.totalProducts();
 }
-totalProducts(){    
+totalProducts(){ 
+ 
+  }
+
+  deleteMenu(menu)
+  {
+    this.orderService.orderdProducts.splice(menu,1);
   }
 
 }

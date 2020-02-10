@@ -29,7 +29,6 @@ export class Tab1Page {
   addproduct(menu){
     this.orderService.orderdProducts.push(menu);
 
-    
   }
-
+  
 }

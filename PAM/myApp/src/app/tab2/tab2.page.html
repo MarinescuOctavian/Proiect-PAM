@@ -6,12 +6,16 @@
                     <div class="chenar row no-gutters" style="width:100%">
                       <div class="col-md-8 p-2 m-2">{{menu.name}}</div>
                       <div class="col-md-2" style="text-align: center">{{menu.price}}</div>
+                      <div class="col-md-2 ">
+                          <ion-button class="buton col-md-6"  (click)="deleteMenu(i)">Delete</ion-button>
+                      </div>
                     </div>
                 </ion-item>
               </ng-container>
               
             </ion-item-sliding>
             <ion-button class="buton col-md-6">Plaseaza comanda</ion-button>
+            
 
    
     
